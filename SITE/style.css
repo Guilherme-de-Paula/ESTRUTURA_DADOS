@@ -1,0 +1,94 @@
+body {
+    /* fundo da tela */
+    background-image: url(img/img3\ \(1\).jpg);
+    /* nâo repetir a imagem */
+    background-repeat: no-repeat;
+    /* cobre tudo o fundo da tela com a mesma imagem */
+    background-size: cover;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.login a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 900;
+    color: #8c7b7c;
+    background-color: beige;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    color: beige;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+p{
+    font-size: 25px;
+    color: beige;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.inputNome{
+    width: 550px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.inputEmail{
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.entrarEmail{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.redes{
+    margin-top: 50px;
+    margin-left: 200px;  
+}
+
+
+.redes img{
+    width: 40px;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    color: beige;
+    background-color: #8c7b7c;
+    border-radius: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-style: none;
+}

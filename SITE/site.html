@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite para a Praia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    .convite {
+      display: none;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .success {
+      color: green;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏖️ Convite para um Dia na Praia!</h1>
+  <h2>🌞 Vem curtir com a gente! 🌊</h2>
+
+  <label for="nome">Digite seu nome para personalizar o convite:</label><br>
+  <input type="text" id="nome" placeholder="Seu nome">
+  <button onclick="mostrarConvite()">Ver convite</button>
+
+  <div class="convite" id="convite">
+    <hr>
+    <h3>Olá, <span id="nomeInserido"></span>! 😎</h3>
+    <p>Que tal aproveitar o dia com a gente na praia? Vai ter:</p>
+    <ul>
+      <li>Sol brilhando ☀️</li>
+      <li>Sair da rotina estressante</li>
+      <li>Companhia bacana 😜</li>
+      <li>Água de coco geladinha 🥥</li>
+      <li>Diversão garantida 😄</li>
+      <li>E aquele pôr do sol inesquecível 🌅</li>
+    </ul>
+    <p><strong>📍 Local:</strong> Praia Paulista</p>
+    <p><strong>🕘 Horário:</strong> A partir das 7h da manhã</p>
+    <p><strong>📅 Data:</strong> Próximo domingo</p>
+    <p>Leve seu protetor solar, roupas leves e muita energia boa!<br>
+    Confirma com a gente até sexta-feira, ok? 😉</p>
+
+    <button onclick="confirmarPresenca()">Confirmar presença</button>
+    <p class="success" id="confirmacao"></p>
+  </div>
+
+  <script>
+    function mostrarConvite() {
+      const nome = document.getElementById('nome').value.trim();
+      if (nome) {
+        document.getElementById('nomeInserido').textContent = nome;
+        document.getElementById('convite').style.display = 'block';
+        document.getElementById('confirmacao').textContent = '';
+      } else {
+        alert("Por favor, digite seu nome.");
+      }
+    }
+
+    function confirmarPresenca() {
+      const nome = document.getElementById('nome').value.trim();
+      document.getElementById('confirmacao').textContent = `Presença confirmada, ${nome}! Vai ser demais! 🎉`;
+    }
+  </script>
+
+</body>
+</html>
