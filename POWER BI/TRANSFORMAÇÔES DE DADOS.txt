@@ -1,0 +1,29 @@
+TRANSFORMAÇÔES DE DADOS
+
+ETL - Extrai, transforma e carrega
+
+ELT - Extrai, carrega e transforma
+---------------------------------------------------
+
+PROCESSAMENTO DE DADOS
+
+OLTP - Transações onlines em tempo real (individual)
+
+OLAP - Analises em grandes volumes de dados (geral)
+----------------------------------------------------
+
+PROCESSAMENTO EM LOTE
+
+BATCH - 
+
+STREAMING - Processamento em fluxo, alinhado ao ELT
+---------------------------------------------------
+
+POWER BI
+
+transformar - tranforma o q ja existe
+adicionar - adiciona porem cria uma coluna nova
+
+extrair coluna
+
+DAX - Data Analyis 
